@@ -1,0 +1,22 @@
+{
+  "name": "sdi-docker",
+  "version": "1.0.0",
+  "description": "Docker image for the module Secure Digital Infrastructure",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"No tests have been written yet.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbrl/SDI-Docker.git"
+  },
+  "author": "Starbeamrainbowlabs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sbrl/SDI-Docker/issues"
+  },
+  "homepage": "https://github.com/sbrl/SDI-Docker#readme",
+  "dependencies": {
+    "tweetnacl": "^1.0.3"
+  }
+}
