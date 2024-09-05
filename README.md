@@ -1,6 +1,6 @@
 # 661982 Secure Digital Infrastructure Dockerfile
 
-> Assessed coursework Dockerfile for the module 661982 Secure Digital Infrastructure
+> Assessed coursework Dockerfile for the module 661982 Secure Digital Infrastructure at the University of Hull
 
 This git repository contains the Dockerfile for the assessed coursework (ACW)for the module 661982 Secure Digital Infrastructure. If you are doing this module, follow the instructions in the ACW sheet you were given.
 
