@@ -14,3 +14,5 @@ git clone https://github.com/sbrl/SDI-Docker.git
 ```
 
 ....before then proceeding to build the Docker image and continuing with the ACW.
+
+For reference, the Docker container will start a HTTP web server on TCP port 3000.
