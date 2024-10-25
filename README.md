@@ -16,3 +16,6 @@ git clone https://github.com/sbrl/SDI-Docker.git
 ....before then proceeding to build the Docker image and continuing with the ACW.
 
 For reference, the Docker container will start a HTTP web server on TCP port 3000.
+
+> [!TIP]
+> The command you need to build the Docker image is `docker build`. Use what you know so far to find the right arguments for using this command.
