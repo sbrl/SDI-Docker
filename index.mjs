@@ -27,10 +27,11 @@ const server = http.createServer((req, res) => {
 	}));
 	// console.log(`msgenc`, msgenc, `key`, key, `nonce`, nonce);
 	const message = btoa(tweetnacl.secretbox(msgenc, nonce, key)) + `|` + btoa(nonce);
+	const payload = `Hello, world! This is a request that was handled by a Docker container. The code on the line below is used for validation purposes.\n${message}`;
 	res.setHeader('Content-Type', 'text/plain');
-	res.setHeader('Content-Length', Buffer.byteLength(message));
+	res.setHeader('Content-Length', Buffer.byteLength(payload));
 	res.setHeader(`x-sbrl-test`, `heya`);
-	res.end(`Hello, world! This is a request that was handled by a Docker container. The code on the line below is used for validation purposes.\n${message}`);
+	res.end(payload);
 	console.log(`[${new Date().toISOString()}] ${req.method ?? `UNKNOWN`} from ${req.socket.remoteAddress}:${req.socket.remotePort}`);
 });
 
