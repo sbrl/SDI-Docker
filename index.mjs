@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
 	const payload = `Hello, world! This is a request that was handled by a Docker container. The code on the line below is used for validation purposes.\n${message}`;
 	res.setHeader('Content-Type', 'text/plain');
 	res.setHeader('Content-Length', Buffer.byteLength(payload));
-	res.setHeader(`x-sbrl-test`, `heya`);
+	res.setHeader(`x-sbrl-test`, `heya this is an easter egg do not change this header`);
 	res.end(payload);
 	console.log(`[${new Date().toISOString()}] ${req.method ?? `UNKNOWN`} from ${req.socket.remoteAddress}:${req.socket.remotePort}`);
 });
